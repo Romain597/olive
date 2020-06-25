@@ -1,6 +1,27 @@
-/* color: */
-/* bg-color: */
-
+@font-face {
+    font-family: 'AvenirLT-Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/avenir-lt-pro-cufonfonts-webfont/Avenir LT Pro 45 Book'), url('../fonts/avenir-lt-pro-cufonfonts-webfont/AvenirLTProBook.woff') format('woff');
+}
+@font-face {
+    font-family: 'AvenirLT-Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/avenir-lt-pro-cufonfonts-webfont/Avenir LT Pro 35 Light'), url('../fonts/avenir-lt-pro-cufonfonts-webfont/AvenirLTProLight.woff') format('woff');
+}
+@font-face {
+    font-family: 'AvenirLT-Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/avenir-lt-pro-cufonfonts-webfont/Avenir LT Pro 65 Medium'), url('../fonts/avenir-lt-pro-cufonfonts-webfont/AvenirLTProMedium.woff') format('woff');
+}
+@font-face {
+    font-family: 'AvenirLT-Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/avenir-lt-pro-cufonfonts-webfont/Avenir LT Pro 85 Heavy'), url('../fonts/avenir-lt-pro-cufonfonts-webfont/AvenirLTProHeavy.woff') format('woff');
+}    
 body {
     margin: 0;
     border: 0;
@@ -12,8 +33,8 @@ body {
     background-color: #BF964B;
     color: #FFF;
     font-weight: normal;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px; /*1rem*/
+    font-family: sans-serif;
+    font-size: 1rem; 
 }
 header.menu {
     position: fixed;
@@ -21,9 +42,8 @@ header.menu {
     margin: 0;
     padding: 0;
     border: 0;
-    background-color: #736C4D;
     width: 100%;
-    height: 10%;
+    height: auto; /*10vh*/
     z-index: 1000;
 }
 main {
@@ -134,19 +154,52 @@ a {
 blockquote {
     position: relative;
     display: block;
-    margin: auto;
+    margin: auto 0;
     border: 0;
     padding: 0;
     font-size: 1em;
     z-index: 4;
+    text-align: center;
+    width: 100%;
 }
-blockquote > p {
+blockquote > p:first-of-type {
     position: relative;
     display: block;
+    font-family: 'AvenirLT-Light', sans-serif;
+    font-size: 4.19em; /*67px*/
+    line-height: 1.19em; /*80px*/
+    width: 100%;
 }
-blockquote > footer {
+blockquote > p:last-of-type {
     position: relative;
     display: block;
+    font-family: 'AvenirLT-Light', sans-serif;
+    font-size: 3.69em; /*59px*/
+    line-height: 1.356em; /*80px*/
+    width: 100%;
+}
+.menu-burger {
+    background-image: url("../img/menu-icon-white.png");
+    position: fixed;
+    display: block;
+    height: 42px;
+    width: 42px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 82%;
+    z-index: 2000;
+    left: 0;
+    background-color: #736C4D;
+    border-radius: 0 0 3px 0;
+    -webkit-border-radius: 0 0 3px 0;
+    -moz-border-radius: 0 0 3px 0;
+    -ms-border-radius: 0 0 3px 0;
+    -o-border-radius: 0 0 3px 0;
+    cursor: pointer;
+}
+.menu-burger-active {
+    background-image: url("../img/menu-icon-black.png");
+    background-color: #BF964B;
 }
 .home-bg {
     background-image: url("../img/ingredients.jpg");
@@ -188,10 +241,11 @@ blockquote > footer {
     width: 100%;
     z-index: 2;
 }
-.container-overlay {
+/* desktop
+.container-overlay { 
     position: absolute;
     display: block;
-    padding: 0;
+    padding: 4%;
     border: 0;
     background-color: #3d3929;
     margin: 0;
@@ -199,9 +253,44 @@ blockquote > footer {
     width: 37%;
     opacity: 0.7;
     z-index: 3;
+    box-sizing: border-box;
+}*/
+.container-overlay { 
+    position: relative;
+    display: block;
+    padding: 4%;
+    border: 0;
+    background-color: #3d3929;
+    margin: 0;
+    height: 20%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: 3;
+    box-sizing: border-box;
 }
-.title {
-
+.inner-overlay {
+    position: relative;
+    display: block;
+    margin: 5px 0 10px 0;
+}
+.art-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    z-index: 2;
+}
+.art-container > div.item {
+    flex: 0 1 auto;
+    align-self: auto;
+    order: 0;
+    margin-bottom: 40px;
+}
+.art-container > div.item img {
+    width: 100%;
+    height: auto;
+    margin-top: 30%;
 }
 .list-container {
     display: flex;
@@ -216,12 +305,47 @@ blockquote > footer {
     align-self: auto;
     order: 0;
 }
-.list-container img {
+.list-container > div.item img {
     width: 100%;
     height: auto;
 }
-.list-container .img-legend {
-
+.header-container {
+    position: relative;
+    display: block;
+    background-color: #736C4D;
+}
+.logo-container {
+    position: relative;
+    display: block;
+    margin: 0 28%;
+    box-sizing: border-box;
+    height: 8vh;
+}
+.logo-container > img {
+    position: relative;
+    display: block;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+.menu-container {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    padding: 6px 0 2px 0;
+    z-index: 2;
+}
+.menu-container > div.menu-nav-item {
+    flex: 0 1 100%;
+    align-self: auto;
+    order: 0;
+    padding: 5px;
+    border: 1px solid #555;
+    border-width: 1px 0 0 0;
 }
 .footer-menu {
     display: flex;
@@ -231,10 +355,36 @@ blockquote > footer {
     align-content: stretch;
     z-index: 2;
 }
-.footer-menu > div.footer-menu-item {
-    flex: 0 1 auto;
+.footer-menu > div.footer-menu-item:first-of-type {
+    flex: 0 1 100%; /*0 1 56%*/
     align-self: auto;
     order: 0;
+}
+.footer-menu > div.footer-menu-item {
+    flex: 0 1 50%; /*0 1 22%*/
+    align-self: auto;
+    order: 0;
+}
+.footer-menu > div.footer-menu-item > h3 {
+    font-family: 'AvenirLT-Heavy', sans-serif;
+    font-size: 1.625em; /*26px*/
+    line-height: 1.577em; /*41px*/
+    text-transform: uppercase;
+    text-align: center;
+    margin: 72px 0 36px 0; /*10vh 0 5vh 0*/
+}
+.footer-menu > div.footer-menu-item > p {
+    font-family: 'AvenirLT-Light', sans-serif;
+    font-size: 1.937em; /*31px*/
+    line-height: 1.161em; /*36px*/
+    text-align: center;
+}
+.footer-menu > div.footer-menu-item > a {
+    font-family: 'AvenirLT-Light', sans-serif;
+    font-size: 1.625em; /*26px*/
+    line-height: 1.577em; /*41px*/
+    text-decoration: none;
+    text-align: center;
 }
 .social-container {
     display: flex;
@@ -243,9 +393,139 @@ blockquote > footer {
     align-items: stretch;
     align-content: stretch;
     z-index: 2;
+    margin: 44px 0 15px 0;
 }
 .social-container > div.social-item {
     flex: 0 1 auto;
     align-self: auto;
     order: 0;
+}
+.social-container > div.social-item > a {
+    position: relative;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.social-container > div.social-item > img {
+    position: relative;
+}
+.title {
+    font-family: 'Antic Didone', serif;
+    font-size: 4.8em; /*77px*/
+    line-height: 1.2em; /*92px*/
+    text-align: center;
+}
+.title-bis {
+    font-family: 'Antic Didone', serif;
+    font-size: 3.44em; /*55px*/
+    line-height: 1,2em; /*66px*/
+    text-align: center;
+}
+.title-bis2 {
+    font-family: 'Antic Didone', serif;
+    font-size: 5.88em; /*94px*/
+    line-height: 1.19em; /*112px*/
+    text-align: center;
+}
+.home-title {
+    /*margin-top: 10vh;*/
+    font-family: 'Antic Didone', serif;
+    font-size: 7.6em; /*122px*/
+    line-height: 1.2em; /*146px*/
+    text-align: center;
+}
+.title-smaller {
+    font-size: 0.634em; /*77px*/
+    line-height: 1.8925em; /*146px*/
+}
+.title-find {
+    text-align: center;
+    font-family: 'AvenirLT-Heavy', sans-serif;
+    font-size: 5em; /*80px*/
+    line-height: 1.188em; /*95px*/
+    margin: 0 0 4vh 0;
+}
+.footer-menu > div.footer-menu-item > h3.title-footer {
+    font-family: 'AvenirLT-Heavy', sans-serif;
+    font-size: 1.937em; /*31px*/
+    line-height: 1.322em; /*41px*/
+    text-transform: uppercase;
+    text-align: center;
+}
+.menu-link {
+    font-family: 'AvenirLT-Book', sans-serif;
+    font-size: 2.25em; /*36px*/
+    line-height: 1.2em; /*43px*/
+    text-align: center;
+}
+.btn-book {
+    position: relative;
+    display: block;
+    margin: 30px;
+    padding: 20px;
+    border: 0;
+    background-color: #BF964B;
+    text-decoration: none;
+    font-family: 'AvenirLT-Book', sans-serif;
+    font-size: 2.25em; /*36px*/
+    line-height: 1.2em; /*43px*/
+    text-align: center;
+}
+.btn-contact {
+    position: relative;
+    display: block;
+    margin: 30px;
+    padding: 20px;
+    border: 0;
+    background-color: #BF964B;
+    text-decoration: none;
+    font-family: 'AvenirLT-Medium', sans-serif;
+    font-size: 2.06em; /*33px*/
+    line-height: 1.213em; /*40px*/
+    text-align: center;
+}
+.btn-money {
+    position: relative;
+    display: block;
+    margin: 30px;
+    padding: 0 10%;
+    border: 0;
+    background-color: #fff;
+    color: #736C4D;
+    text-decoration: none;
+    font-family: 'AvenirLT-Heavy', sans-serif;
+    font-size: 8.375em; /*134px*/
+    line-height: 1.201em; /*161px*/
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    text-align: center;
+}
+.text {
+    font-family: 'AvenirLT-Light', sans-serif;
+    font-size: 2em; /*32px*/
+    line-height: 1.19em; /*38px*/
+    text-align: center;
+}
+.list-container .img-legend {
+    font-family: 'AvenirLT-Light', sans-serif;
+    font-size: 1.87em; /*30px*/
+    line-height: 1.2em; /*36px*/
+    text-align: center;
+}
+.msg {
+    font-family: 'AvenirLT-Light', sans-serif;
+    font-size: 2.75em; /*44px*/
+    line-height: 1.18em; /*52px*/
+    text-align: center;
+}
+.text-find {
+    text-align: center;
+    font-family: 'AvenirLT-Light', sans-serif;
+    font-size: 1.75em; /*28px*/
+    line-height: 1.18em; /*33px*/
 }

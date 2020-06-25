@@ -5,65 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurent Olive</title>
     <!-- styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header class="menu" style="display:none;">
-        <div>
-            <img alt="Logo du restaurent Olive" src="assets/img/olive_logo.png">
+    <header class="menu">
+        <div class="menu-burger"></div> <!-- menu-burger-active-->
+        <div class="header-container" style="display:none;">
+            <div class="logo-container">
+                <img alt="Logo du restaurent Olive" src="assets/img/olive_logo.png">
+            </div>
+            <nav class="menu-container">
+                <div class="menu-nav-item">
+                    <a class="menu-link">Home</a>
+                </div>
+                <div class="menu-nav-item">
+                    <a class="menu-link">About</a>
+                </div>
+                <div class="menu-nav-item">
+                    <a class="menu-link">Order</a>
+                </div>
+                <div class="menu-nav-item">
+                    <a class="menu-link">Contact Us</a>
+                </div>
+            </nav>
         </div>
-        <nav>
-            <a>Home</a>
-            <a>About</a>
-            <a>Order</a>
-            <a>Contact Us</a>
-        </nav>
     </header>
     <main>
         <section class="home-bg">
             <div class="container">
-                <p class="title"><span>The</span> Italian<br>Restaurant</p>
-                <button>Book Now</button>
+                <div>
+                    <p class="home-title"><span class="title-smaller">The</span> Italian<br>Restaurant</p>
+                    <a href="" class="btn-book">Book Now</a>
+                </div>
             </div>
         </section>
         <section>
             <div class="container">
-                <div>
-                    <img alt="" src="assets/img/dish_art2.png">
-                </div>
-                <div>
-                    <h2 class="title">About Us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>    
+                <div class="art-container">
+                    <div class="item">
+                        <img alt="" src="assets/img/dish_art2.png">
+                    </div>
+                    <div class="item">
+                        <h2 class="title">About Us</h2>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>    
+                    </div>
                 </div>
             </div>
         </section>
         <section class="olive-color-bg">
             <div class="container">
-                <div>
-                    <img alt="" src="assets/img/fork.jpg">
-                </div>>
-                <div>
-                    <h3 class="title">We would love to know what you think</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-                    <button>Contact Us!</button>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <h1 class="title">Our golden dishes</h1>
                 <div class="list-container">
                     <div class="item">
-                        <img alt="" src="assets/img/dish_pic2.jpg">
-                        <p class="img-legend">Spaguetti a la italiana</p>
+                        <img alt="" src="assets/img/fork.jpg">
                     </div>
                     <div class="item">
-                        <img alt="" src="assets/img/dessert.jpg">
-                        <p class="img-legend">Orange Mousse</p>
-                    </div>
-                    <div class="item">
-                        <img alt="" src="assets/img/dish_pic3.jpg">
-                        <p class="img-legend">Our Nonna’s Lasagna</p>
+                        <h3 class="title-bis">We would love to know what you think</h3>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                        <a href="" class="btn-contact">Contact Us!</a>
                     </div>
                 </div>
             </div>
@@ -71,12 +70,35 @@
         <section>
             <div class="container">
                 <div>
-                    <img alt="" src="assets/img/dish_art1.png">
+                    <h1 class="title">Our golden dishes</h1>
+                    <div class="list-container">
+                        <div class="item">
+                            <img alt="" src="assets/img/dish_pic2.jpg">
+                            <p class="img-legend">Spaguetti a la italiana</p>
+                        </div>
+                        <div class="item">
+                            <img alt="" src="assets/img/dessert.jpg">
+                            <p class="img-legend">Orange Mousse</p>
+                        </div>
+                        <div class="item">
+                            <img alt="" src="assets/img/dish_pic3.jpg">
+                            <p class="img-legend">Our Nonna’s Lasagna</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h1 class="title">First time here?</h1>
-                    <p>click here to get your discount code</p>
-                    <button>$ 100</button>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="art-container">
+                    <div class="item">
+                        <img alt="" src="assets/img/dish_art1.png">
+                    </div>
+                    <div class="item">
+                        <h1 class="title-bis2">First time here?</h1>
+                        <p class="msg">click here to get your discount code</p>
+                        <a href="" class="btn-money">$ 100</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -86,16 +108,17 @@
         <section>
             <div class="container">
                 <blockquote>
-                    <p>what is done in love is well done</p>
-                    <footer>Vincent Van Gogh</footer>
+                    <p>&ldquo;what is done in love is well done&rdquo;</p>
+                    <p>Vincent Van Gogh</p>
                 </blockquote>
             </div>
         </section>
         <section class="map-bg">
             <div class="container-overlay">
-                <h1 class="title">find us at</h1>
-                <p>101 ST, Buenos Aires</p>
-                <p>opening hours: 9:00 - 00:00</p>
+                <div class="inner-overlay">
+                    <h1 class="title-find">find us at</h1>
+                    <p class="text-find">101 ST, Buenos Aires<br><br>opening hours: 9:00 - 00:00</p>
+                </div>
             </div>
         </section>
         <footer class="olive-color-bg">
@@ -103,36 +126,36 @@
                 <div class="container">
                     <div class="footer-menu">
                         <div class="footer-menu-item">
-                            <h3 class="title">ABOUT</h3>
+                            <h3 class="title-footer">ABOUT</h3>
                             <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididunt ultimam quantum</p>
                         </div>
                         <div class="footer-menu-item">
-                            <h3 class="title">ABOUT</h3>
-                            <p>Team</p>
-                            <p>Join us</p>
-                            <p>Ethic</p>
-                            <p>Goals</p>
+                            <h3>ABOUT</h3>
+                            <a href="">Team</a>
+                            <a href="">Join us</a>
+                            <a href="">Ethic</a>
+                            <a href="">Goals</a>
                         </div>
                         <div class="footer-menu-item">
-                            <h3 class="title">ABOUT</h3>
-                            <p>Team</p>
-                            <p>Join us</p>
-                            <p>Ethic</p>
-                            <p>Goals</p>
+                            <h3>ABOUT</h3>
+                            <a href="">Team</a>
+                            <a href="">Join us</a>
+                            <a href="">Ethic</a>
+                            <a href="">Goals</a>
                         </div>
                     </div>
                     <div class="social-container">
                         <div class="social-item">
-                            img
+                            <a href=""><img alt="" src="assets/img/Instagram.png"></a>
                         </div>
                         <div class="social-item">
-                            img
+                            <a href=""><img alt="" src="assets/img/Facebook.png"></a>
                         </div>
                         <div class="social-item">
-                            img
+                            <a href=""><img alt="" src="assets/img/Twitter.png"></a>
                         </div>
                         <div class="social-item">
-                            img
+                            <a href=""><img alt=""  src="assets/img/WhatsApp.png"></a>
                         </div>
                     </div>
                 </div>
