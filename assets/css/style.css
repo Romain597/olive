@@ -34,7 +34,7 @@ main {
     border: 0;
     width: 100%;
 }
-section {
+section, footer {
     position: relative;
     display: block;
     margin: 0;
@@ -51,6 +51,7 @@ h1 {
     border: 0;
     padding: 0;
     font-size: 1em;
+    z-index: 4;
 }
 h2 {
     position: relative;
@@ -60,6 +61,7 @@ h2 {
     border: 0;
     padding: 0;
     font-size: 1em;
+    z-index: 4;
 }
 h3 {
     position: relative;
@@ -69,6 +71,7 @@ h3 {
     border: 0;
     padding: 0;
     font-size: 1em;
+    z-index: 4;
 }
 h4 {
     position: relative;
@@ -78,6 +81,7 @@ h4 {
     border: 0;
     padding: 0;
     font-size: 1em;
+    z-index: 4;
 }
 h5 {
     position: relative;
@@ -87,6 +91,7 @@ h5 {
     border: 0;
     padding: 0;
     font-size: 1em;
+    z-index: 4;
 }
 h6 {
     position: relative;
@@ -96,6 +101,7 @@ h6 {
     border: 0;
     padding: 0;
     font-size: 1em;
+    z-index: 4;
 }
 p {
     position: relative;
@@ -105,6 +111,7 @@ p {
     border: 0;
     padding: 0;
     font-size: 1em;
+    z-index: 4;
 }
 img {
     position: relative;
@@ -112,6 +119,7 @@ img {
     margin: 0;
     border: 0;
     padding: 0;
+    z-index: 4;
 }
 a {
     position: relative;
@@ -121,22 +129,76 @@ a {
     border: 0;
     padding: 0;
     font-size: 1em;
+    z-index: 4;
+}
+blockquote {
+    position: relative;
+    display: block;
+    margin: auto;
+    border: 0;
+    padding: 0;
+    font-size: 1em;
+    z-index: 4;
+}
+blockquote > p {
+    position: relative;
+    display: block;
+}
+blockquote > footer {
+    position: relative;
+    display: block;
 }
 .home-bg {
     background-image: url("../img/ingredients.jpg");
     background-size: cover;
     background-position: center;
+    z-index: 2;
 }
-.olive-color {
+.olive-color-bg {
     background-color: #736C4D;
 }
 .dish-bg {
     background-image: url("../img/dish_pic1.jpg");
     background-size: cover;
     background-position: center;
+    z-index: 2;
+}
+.map-bg {
+    background-image: url("../img/map.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
 }
 .container {
-
+    position: relative;
+    display: block;
+    padding: 0;
+    border: 0;
+    margin: 0 12%;
+    z-index: 2;
+}
+.bg-color-container {
+    position: absolute;
+    display: block;
+    padding: 0;
+    border: 0;
+    background-color: #BF964B;
+    margin: 13vh 0;
+    min-height: 74vh;
+    width: 100%;
+    z-index: 2;
+}
+.container-overlay {
+    position: absolute;
+    display: block;
+    padding: 0;
+    border: 0;
+    background-color: #3d3929;
+    margin: 0;
+    height: 100%;
+    width: 37%;
+    opacity: 0.7;
+    z-index: 3;
 }
 .title {
 
@@ -147,6 +209,7 @@ a {
     justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
+    z-index: 2;
 }
 .list-container > div.item {
     flex: 0 1 auto;
@@ -155,8 +218,34 @@ a {
 }
 .list-container img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 .list-container .img-legend {
 
+}
+.footer-menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    z-index: 2;
+}
+.footer-menu > div.footer-menu-item {
+    flex: 0 1 auto;
+    align-self: auto;
+    order: 0;
+}
+.social-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    z-index: 2;
+}
+.social-container > div.social-item {
+    flex: 0 1 auto;
+    align-self: auto;
+    order: 0;
 }
