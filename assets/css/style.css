@@ -216,7 +216,20 @@ blockquote > p:last-of-type {
     background-position: center;
     z-index: 2;
 }
-.map-bg {
+/*.map-bg {
+    background-image: url("../img/map.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+}*/
+.map-container {
+    position: absolute;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    min-height: 100vh;
     background-image: url("../img/map.jpg");
     background-size: cover;
     background-position: center;
