@@ -16,32 +16,36 @@
 <body>
     <header class="menu">
         <div class="menu-burger"></div> <!-- menu-burger-active-->
-        <div class="header-container" style="display:none;">
+        <div class="header-container">
             <div class="logo-container">
                 <img alt="Logo du restaurent Olive" src="assets/img/olive_logo.png">
             </div>
-            <nav class="menu-container">
-                <div class="menu-nav-item">
-                    <a class="menu-link">Home</a>
-                </div>
-                <div class="menu-nav-item">
-                    <a class="menu-link">About</a>
-                </div>
-                <div class="menu-nav-item">
-                    <a class="menu-link">Order</a>
-                </div>
-                <div class="menu-nav-item">
-                    <a class="menu-link">Contact Us</a>
-                </div>
-            </nav>
+            <div class="menu-container">
+                <nav class="nav-container">
+                    <div class="menu-nav-item">
+                        <a class="menu-link">Home</a>
+                    </div>
+                    <div class="menu-nav-item">
+                        <a class="menu-link">About</a>
+                    </div>
+                    <div class="menu-nav-item">
+                        <a class="menu-link">Order</a>
+                    </div>
+                    <div class="menu-nav-item">
+                        <a class="menu-link">Contact Us</a>
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
         <section class="home-bg">
             <div class="container">
-                <div>
-                    <p class="home-title"><span class="title-smaller">The</span> Italian<br>Restaurant</p>
-                    <a href="" class="btn-book">Book Now</a>
+                <div class="home-container">
+                    <div class="home-description">
+                        <p class="home-title"><span class="title-smaller">The</span> Italian<br>Restaurant</p>
+                        <a href="" class="btn-book">Book Now</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -112,16 +116,18 @@
         </section>
         <section>
             <div class="container">
-                <blockquote>
-                    <p>&ldquo;what is done in love is well done&rdquo;</p>
-                    <p>Vincent Van Gogh</p>
-                </blockquote>
+                <div class="blockquote-container">
+                    <blockquote>
+                        <p>&ldquo;what is done in love is well done&rdquo;</p>
+                        <p>Vincent Van Gogh</p>
+                    </blockquote>
+                </div>
             </div>
         </section>
         <section> <!--class="map-bg"-->
             <div id="map" class="map-container"></div>
             <div class="container-overlay">
-                <div class="inner-overlay">
+                <div class="inner-overlay-container">
                     <h1 class="title-find">find us at</h1>
                     <p class="text-find">101 ST, Buenos Aires<br><br>opening hours: 9:00 - 00:00</p>
                 </div>
@@ -137,17 +143,37 @@
                         </div>
                         <div class="footer-menu-item">
                             <h3>ABOUT</h3>
-                            <a href="">Team</a>
-                            <a href="">Join us</a>
-                            <a href="">Ethic</a>
-                            <a href="">Goals</a>
+                            <ol class="footer-menu-item-list">
+                                <li>
+                                    <a href="">Team</a>
+                                </li>
+                                <li>
+                                    <a href="">Join us</a>
+                                </li>
+                                <li>
+                                    <a href="">Ethic</a>
+                                </li>
+                                <li>
+                                    <a href="">Goals</a>
+                                </li>
+                            </ol>
                         </div>
                         <div class="footer-menu-item">
                             <h3>ABOUT</h3>
-                            <a href="">Team</a>
-                            <a href="">Join us</a>
-                            <a href="">Ethic</a>
-                            <a href="">Goals</a>
+                            <ol class="footer-menu-item-list">
+                                <li>
+                                    <a href="">Team</a>
+                                </li>
+                                <li>
+                                    <a href="">Join us</a>
+                                </li>
+                                <li>
+                                    <a href="">Ethic</a>
+                                </li>
+                                <li>
+                                    <a href="">Goals</a>
+                                </li>
+                            </ol>
                         </div>
                     </div>
                     <div class="social-container">
