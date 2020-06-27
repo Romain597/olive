@@ -243,6 +243,9 @@ blockquote > p:last-of-type {
     text-align: center;
 }
 @media screen and (max-width: 700px) {
+    body {
+        font-size: calc(10px + 6 * ((100vw - 320px) / 680));
+    }
     .container-overlay { 
         position: relative;
         padding: 4%;
@@ -278,6 +281,8 @@ blockquote > p:last-of-type {
         -ms-border-radius: 0 0 3px 0;
         -o-border-radius: 0 0 3px 0;
         cursor: pointer;
+        border: 1px solid #6b6547;
+        box-sizing: border-box;
     }
     .menu-burger-active {
         background-image: url("../img/menu-icon-black.png");
@@ -287,7 +292,9 @@ blockquote > p:last-of-type {
     .header-container {
         position: relative;
         display: none;
-        background-color: #736C4D;
+        /*background-color: #736C4D;*/
+        background: rgb(115,108,77);
+        background: linear-gradient(0deg, rgba(115,108,77,1) 0%, rgba(122,115,82,1) 50%, rgba(115,108,77,1) 100%);
     }
     .logo-container {
         position: relative;
@@ -329,12 +336,15 @@ blockquote > p:last-of-type {
         align-self: auto;
         order: 0;
         padding: 5px;
-        border: 1px solid #555;
+        border: 1px solid #6b6547;
         border-width: 1px 0 0 0;
         cursor: pointer;
     }
-    .menu-nav-item > a {
+    .menu-nav-item > a, .menu-nav-item > a:link, .menu-nav-item > a:visited, .menu-nav-item > a:hover {
         position: relative;
+    }
+    .menu-nav-item > a:active {
+        color: #BF964B;
     }
     .home-container {
         position: relative;
@@ -469,12 +479,15 @@ blockquote > p:last-of-type {
         width: 100%;
         text-align: center;
     }
-    .footer-menu-item-list > li > a {
+    .footer-menu-item-list > li > a, .footer-menu-item-list > li > a:link, .footer-menu-item-list > li > a:visited, .footer-menu-item-list > li > a:hover {
         display: inline;
         font-family: 'AvenirLT-Light', sans-serif;
         font-size: 1.625em; /*26px*/
         line-height: 1.577em; /*41px*/
         text-decoration: none;
+    }
+    .footer-menu-item-list > li > a:active {
+        color: #736C4D;
     }
     .social-container {
         display: flex;
@@ -494,13 +507,18 @@ blockquote > p:last-of-type {
         order: 0;
         margin: 0 auto;
     }
-    .social-container > div.social-item > a {
+    .social-container > div.social-item > a, .social-container > div.social-item > a:link, .social-container > div.social-item > a:visited, .social-container > div.social-item > a:hover {
         position: relative;
         border-radius: 50%;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
+    }
+    .social-container > div.social-item > a:active {
+        -webkit-box-shadow: 0px 0px 15px 2px rgb(115, 108, 77);
+        -moz-box-shadow: 0px 0px 15px 2px rgba(115,108,77,1);
+         box-shadow: 0px 0px 15px 2px rgb(115, 108, 77);
     }
     .social-container > div.social-item > a > img {
         position: relative;
@@ -539,7 +557,7 @@ blockquote > p:last-of-type {
     .home-title {
         /*margin-top: 10vh;*/
         font-family: 'Antic Didone', serif;
-        font-size: 7.6em; /*122px*/
+        font-size: 6.6em; /*122px*/
         line-height: 1.2em; /*146px*/
         text-align: center;
     }
@@ -567,7 +585,7 @@ blockquote > p:last-of-type {
         line-height: 1.2em; /*43px*/
         text-align: center;
     }
-    .btn-book {
+    .btn-book, .btn-book:link, .btn-book:hover, .btn-book:visited {
         position: relative;
         display: block;
         margin: 30px;
@@ -580,7 +598,12 @@ blockquote > p:last-of-type {
         line-height: 1.2em; /*43px*/
         text-align: center;
     }
-    .btn-contact {
+    .btn-book:active {
+        -webkit-box-shadow: inset 0px 0px 15px 2px rgb(115, 108, 77);
+        -moz-box-shadow: inset 0px 0px 15px 2px rgba(115,108,77,1);
+         box-shadow: inset 0px 0px 15px 2px rgb(115, 108, 77);
+    }
+    .btn-contact, .btn-contact:link, .btn-contact:hover, .btn-contact:visited {
         position: relative;
         display: block;
         margin: 30px;
@@ -593,7 +616,12 @@ blockquote > p:last-of-type {
         line-height: 1.213em; /*40px*/
         text-align: center;
     }
-    .btn-money {
+    .btn-contact:active {
+        -webkit-box-shadow: inset 0px 0px 15px 2px rgb(115, 108, 77);
+        -moz-box-shadow: inset 0px 0px 15px 2px rgba(115,108,77,1);
+         box-shadow: inset 0px 0px 15px 2px rgb(115, 108, 77);
+    }
+    .btn-money, .btn-money:visited, .btn-money:link, .btn-money:hover {
         position: relative;
         display: block;
         margin: 30px;
@@ -611,6 +639,11 @@ blockquote > p:last-of-type {
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
         text-align: center;
+    }
+    .btn-money:active {
+        -webkit-box-shadow: inset 0px 0px 15px 2px rgb(115, 108, 77);
+        -moz-box-shadow: inset 0px 0px 15px 2px rgba(115,108,77,1);
+         box-shadow: inset 0px 0px 15px 2px rgb(115, 108, 77);
     }
     .text {
         margin: 10px 0 35px 0;
@@ -635,6 +668,9 @@ blockquote > p:last-of-type {
     }
 }
 @media screen and (min-width: 700px) {
+    body {
+        font-size: calc(5px + 6 * ((100vw - 320px) / 680));
+    }
     .container-overlay { 
         position: absolute;
         padding: 4%;
@@ -660,13 +696,17 @@ blockquote > p:last-of-type {
     }
     .header-container {
         position: relative;
-        background-color: #736C4D;
         min-height: 10vh;
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-start;
         align-items: stretch;
         align-content: stretch;
+        /*background-color: #736C4D;*/
+        background: rgb(115,108,77);
+        background: linear-gradient(0deg, rgba(115,108,77,1) 0%, rgba(122,115,82,1) 50%, rgba(115,108,77,1) 100%);
+        border: 1px solid #6b6547;
+        border-width: 0px 0px 1px 0px;
     }
     .logo-container {
         position: relative;
@@ -718,9 +758,12 @@ blockquote > p:last-of-type {
         border: 0;
         border-width: 0;
     }
-    .menu-nav-item > a {
+    .menu-nav-item > a, .menu-nav-item > a:visited, .menu-nav-item > a:link, .menu-nav-item > a:active {
         display: inline;
         cursor: pointer;
+    }
+    .menu-nav-item > a:hover {
+        color: #BF964B;
     }
     .home-container {
         position: relative;
@@ -877,12 +920,15 @@ blockquote > p:last-of-type {
         width: 100%;
         text-align: center;
     }
-    .footer-menu-item-list > li > a {
+    .footer-menu-item-list > li > a, .footer-menu-item-list > li > a:link, .footer-menu-item-list > li > a:visited, .footer-menu-item-list > li > a:active {
         display: inline;
         font-family: 'AvenirLT-Light', sans-serif;
         font-size: 1.625em; /*26px*/
         line-height: 1.577em; /*41px*/
         text-decoration: none;
+    }
+    .footer-menu-item-list > li > a:hover {
+        color: #736C4D;
     }
     .social-container {
         display: flex;
@@ -899,13 +945,18 @@ blockquote > p:last-of-type {
         order: 0;
         margin: 0 20px;
     }
-    .social-container > div.social-item > a {
+    .social-container > div.social-item > a, .social-container > div.social-item > a:link, .social-container > div.social-item > a:active, .social-container > div.social-item > a:visited {
         position: relative;
         border-radius: 50%;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
+    }
+    .social-container > div.social-item > a:hover {
+        -webkit-box-shadow: 0px 0px 15px 2px rgb(115, 108, 77);
+        -moz-box-shadow: 0px 0px 15px 2px rgba(115,108,77,1);
+         box-shadow: 0px 0px 15px 2px rgb(115, 108, 77);
     }
     .social-container > div.social-item > a > img {
         position: relative;
@@ -974,7 +1025,7 @@ blockquote > p:last-of-type {
         line-height: 1.2em; /*43px*/
         text-align: center;
     }
-    .btn-book {
+    .btn-book, .btn-book:link, .btn-book:visited, .btn-book:active {
         position: relative;
         display: block;
         margin: 30px 30px 30px 30px;
@@ -988,7 +1039,12 @@ blockquote > p:last-of-type {
         text-align: center;
         float: right;
     }
-    .btn-contact {
+    .btn-book:hover {
+        -webkit-box-shadow: inset 0px 0px 15px 2px rgb(115, 108, 77);
+        -moz-box-shadow: inset 0px 0px 15px 2px rgba(115,108,77,1);
+        box-shadow: inset 0px 0px 15px 2px rgb(115, 108, 77);
+    }
+    .btn-contact, .btn-contact:active, .btn-contact:link, .btn-contact:visited {
         position: relative;
         display: block;
         margin: 30px 30px 30px 0px;
@@ -1002,7 +1058,12 @@ blockquote > p:last-of-type {
         text-align: center;
         float: left;
     }
-    .btn-money {
+    .btn-contact:hover {
+        -webkit-box-shadow: inset 0px 0px 15px 2px rgb(115, 108, 77);
+        -moz-box-shadow: inset 0px 0px 15px 2px rgba(115,108,77,1);
+        box-shadow: inset 0px 0px 15px 2px rgb(115, 108, 77);
+    }
+    .btn-money, .btn-money:active, .btn-money:visited, .btn-money:link {
         position: relative;
         display: block;
         margin: 30px 30px 30px 0px;
@@ -1021,6 +1082,11 @@ blockquote > p:last-of-type {
         -o-border-radius: 10px;
         text-align: center;
         float: left;
+    }
+    .btn-money:hover {
+        -webkit-box-shadow: inset 0px 0px 15px 2px rgb(115, 108, 77);
+        -moz-box-shadow: inset 0px 0px 15px 2px rgba(115,108,77,1);
+        box-shadow: inset 0px 0px 15px 2px rgb(115, 108, 77);
     }
     .text {
         margin: 10px 0 35px 0;
