@@ -44,7 +44,7 @@ header.menu {
     padding: 0;
     border: 0;
     width: 100%;
-    height: auto; /*10vh*/
+    height: auto;
     z-index: 1000;
 }
 main {
@@ -173,16 +173,16 @@ blockquote > p:first-of-type {
     position: relative;
     display: block;
     font-family: 'AvenirLT-Light', sans-serif;
-    font-size: 4.19em; /*67px*/
-    line-height: 1.19em; /*80px*/
+    font-size: 4.19em;
+    line-height: 1.19em;
     width: 100%;
 }
 blockquote > p:last-of-type {
     position: relative;
     display: block;
     font-family: 'AvenirLT-Light', sans-serif;
-    font-size: 3.69em; /*59px*/
-    line-height: 1.356em; /*80px*/
+    font-size: 3.69em;
+    line-height: 1.356em;
     width: 100%;
 }
 .home-bg {
@@ -285,14 +285,12 @@ blockquote > p:last-of-type {
         box-sizing: border-box;
     }
     .menu-burger-active {
-        background-image: url("../img/menu-icon-black.png");
         background-color: #BF964B;
         display: block;
     }
     .header-container {
         position: relative;
         display: none;
-        /*background-color: #736C4D;*/
         background: rgb(115,108,77);
         background: linear-gradient(0deg, rgba(115,108,77,1) 0%, rgba(122,115,82,1) 50%, rgba(115,108,77,1) 100%);
     }
@@ -429,8 +427,8 @@ blockquote > p:last-of-type {
     .list-container .img-legend {
         margin: 10px 0 0 0;
         font-family: 'AvenirLT-Light', sans-serif;
-        font-size: 1.87em; /*30px*/
-        line-height: 1.2em; /*36px*/
+        font-size: 1.87em;
+        line-height: 1.2em;
         text-align: center;
     }
     .footer-menu {
@@ -445,27 +443,27 @@ blockquote > p:last-of-type {
         order: 0;
     }
     .footer-menu > div.footer-menu-item:first-of-type {
-        flex: 0 1 100%; /*0 1 56%*/
+        flex: 0 1 100%;
         align-self: auto;
         order: 0;
     }
     .footer-menu > div.footer-menu-item {
-        flex: 0 1 50%; /*0 1 22%*/
+        flex: 0 1 50%;
         align-self: auto;
         order: 0;
     }
     .footer-menu > div.footer-menu-item > h3 {
         font-family: 'AvenirLT-Heavy', sans-serif;
-        font-size: 1.625em; /*26px*/
-        line-height: 1.577em; /*41px*/
+        font-size: 1.625em;
+        line-height: 1.577em;
         text-transform: uppercase;
         text-align: center;
-        margin: 72px 0 36px 0; /*10vh 0 5vh 0*/
+        margin: 72px 0 36px 0;
     }
     .footer-menu > div.footer-menu-item > p {
         font-family: 'AvenirLT-Light', sans-serif;
-        font-size: 1.937em; /*31px*/
-        line-height: 1.161em; /*36px*/
+        font-size: 1.937em;
+        line-height: 1.161em;
         text-align: center;
     }
     .footer-menu-item-list {
@@ -482,8 +480,8 @@ blockquote > p:last-of-type {
     .footer-menu-item-list > li > a, .footer-menu-item-list > li > a:link, .footer-menu-item-list > li > a:visited, .footer-menu-item-list > li > a:hover {
         display: inline;
         font-family: 'AvenirLT-Light', sans-serif;
-        font-size: 1.625em; /*26px*/
-        line-height: 1.577em; /*41px*/
+        font-size: 1.625em;
+        line-height: 1.577em;
         text-decoration: none;
     }
     .footer-menu-item-list > li > a:active {
@@ -529,60 +527,59 @@ blockquote > p:last-of-type {
     .title {
         margin: 40px 0;
         font-family: 'Antic Didone', serif;
-        font-size: 4.8em; /*77px*/
-        line-height: 1.2em; /*92px*/
+        font-size: 4.8em;
+        line-height: 1.2em;
         text-align: center;
     }
     .title-bis {
         margin: 5px 0 30px 0;
         font-family: 'Antic Didone', serif;
-        font-size: 3.44em; /*55px*/
-        line-height: 1,2em; /*66px*/
+        font-size: 3.44em;
+        line-height: 1,2em;
         text-align: center;
     }
     .title-bis2 {
         margin: 30px 0 10px 0;
         font-family: 'Antic Didone', serif;
-        font-size: 5.88em; /*94px*/
-        line-height: 1.19em; /*112px*/
+        font-size: 5.88em;
+        line-height: 1.19em;
         text-align: center;
     }
     .title-bis3  {
         margin: 40px 0;
         font-family: 'Antic Didone', serif;
-        font-size: 4.8em; /*77px*/
-        line-height: 1.2em; /*92px*/
+        font-size: 4.8em;
+        line-height: 1.2em;
         text-align: center;
     }
     .home-title {
-        /*margin-top: 10vh;*/
         font-family: 'Antic Didone', serif;
-        font-size: 6.6em; /*122px*/
-        line-height: 1.2em; /*146px*/
+        font-size: 6.6em;
+        line-height: 1.2em;
         text-align: center;
     }
     .title-smaller {
-        font-size: 0.634em; /*77px*/
-        line-height: 1.8925em; /*146px*/
+        font-size: 0.634em;
+        line-height: 1.8925em;
     }
     .title-find {
         text-align: center;
         font-family: 'AvenirLT-Heavy', sans-serif;
-        font-size: 5em; /*80px*/
-        line-height: 1.188em; /*95px*/
+        font-size: 5em;
+        line-height: 1.188em;
         margin: 0 0 4vh 0;
     }
     .footer-menu > div.footer-menu-item > h3.title-footer {
         font-family: 'AvenirLT-Heavy', sans-serif;
-        font-size: 1.937em; /*31px*/
-        line-height: 1.322em; /*41px*/
+        font-size: 1.937em;
+        line-height: 1.322em;
         text-transform: uppercase;
         text-align: center;
     }
     .menu-link {
         font-family: 'AvenirLT-Book', sans-serif;
-        font-size: 2.25em; /*36px*/
-        line-height: 1.2em; /*43px*/
+        font-size: 2.25em;
+        line-height: 1.2em;
         text-align: center;
     }
     .btn-book, .btn-book:link, .btn-book:hover, .btn-book:visited {
@@ -594,8 +591,8 @@ blockquote > p:last-of-type {
         background-color: #BF964B;
         text-decoration: none;
         font-family: 'AvenirLT-Book', sans-serif;
-        font-size: 2.25em; /*36px*/
-        line-height: 1.2em; /*43px*/
+        font-size: 2.25em;
+        line-height: 1.2em;
         text-align: center;
     }
     .btn-book:active {
@@ -612,8 +609,8 @@ blockquote > p:last-of-type {
         background-color: #BF964B;
         text-decoration: none;
         font-family: 'AvenirLT-Medium', sans-serif;
-        font-size: 2.06em; /*33px*/
-        line-height: 1.213em; /*40px*/
+        font-size: 2.06em;
+        line-height: 1.213em;
         text-align: center;
     }
     .btn-contact:active {
@@ -631,8 +628,8 @@ blockquote > p:last-of-type {
         color: #736C4D;
         text-decoration: none;
         font-family: 'AvenirLT-Heavy', sans-serif;
-        font-size: 6.375em; /*8.375em*/ /*134px*/
-        line-height: 1.201em; /*161px*/
+        font-size: 6.375em;
+        line-height: 1.201em;
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
@@ -648,23 +645,23 @@ blockquote > p:last-of-type {
     .text {
         margin: 10px 0 35px 0;
         font-family: 'AvenirLT-Light', sans-serif;
-        font-size: 2em; /*32px*/
-        line-height: 1.19em; /*38px*/
+        font-size: 2em;
+        line-height: 1.19em;
         text-align: center;
     }
     .msg {
         margin: 0 0 35px 0;
         font-family: 'AvenirLT-Light', sans-serif;
-        font-size: 2.75em; /*44px*/
-        line-height: 1.18em; /*52px*/
+        font-size: 2.75em;
+        line-height: 1.18em;
         text-align: center;
     }
     .text-find {
         margin: 0;
         text-align: center;
         font-family: 'AvenirLT-Light', sans-serif;
-        font-size: 1.75em; /*28px*/
-        line-height: 1.18em; /*33px*/
+        font-size: 1.75em;
+        line-height: 1.18em;
     }
 }
 @media screen and (min-width: 700px) {
@@ -702,7 +699,6 @@ blockquote > p:last-of-type {
         justify-content: flex-start;
         align-items: stretch;
         align-content: stretch;
-        /*background-color: #736C4D;*/
         background: rgb(115,108,77);
         background: linear-gradient(0deg, rgba(115,108,77,1) 0%, rgba(122,115,82,1) 50%, rgba(115,108,77,1) 100%);
         border: 1px solid #6b6547;
@@ -713,7 +709,6 @@ blockquote > p:last-of-type {
         display: block;
         margin: 0;
         box-sizing: border-box;
-        /*min-height: 10vh;*/
         padding: 0px 5px 6px 6px;
         flex: 0 1 20%;
         align-self: auto;
@@ -811,7 +806,6 @@ blockquote > p:last-of-type {
         flex: 0 1 50%;
         align-self: auto;
         order: 0;
-        /*margin-bottom: 10px;*/
         padding: 0 4% 0 0;
         box-sizing: border-box;
         margin: 0;
@@ -819,7 +813,6 @@ blockquote > p:last-of-type {
     .art-container-l > div.item img, .art-container-r > div.item img {
         width: 100%;
         height: auto;
-        /*margin-top: 30%;*/
         margin: 4% 0;
     }
     .page-center {
@@ -872,8 +865,8 @@ blockquote > p:last-of-type {
     .list-container .img-legend {
         margin: 10px 0 0 0;
         font-family: 'AvenirLT-Light', sans-serif;
-        font-size: 1.87em; /*30px*/
-        line-height: 1.2em; /*36px*/
+        font-size: 1.87em;
+        line-height: 1.2em;
         text-align: center;
     }
     .footer-menu {
@@ -896,16 +889,16 @@ blockquote > p:last-of-type {
     }
     .footer-menu > div.footer-menu-item > h3 {
         font-family: 'AvenirLT-Heavy', sans-serif;
-        font-size: 1.625em; /*26px*/
-        line-height: 1.577em; /*41px*/
+        font-size: 1.625em;
+        line-height: 1.577em;
         text-transform: uppercase;
         text-align: center;
-        margin: 72px 0 36px 0; /*10vh 0 5vh 0*/
+        margin: 72px 0 36px 0;
     }
     .footer-menu > div.footer-menu-item > p {
         font-family: 'AvenirLT-Light', sans-serif;
-        font-size: 1.937em; /*31px*/
-        line-height: 1.161em; /*36px*/
+        font-size: 1.937em;
+        line-height: 1.161em;
         text-align: left;
         padding: 0 10% 0 0;
     }
@@ -923,8 +916,8 @@ blockquote > p:last-of-type {
     .footer-menu-item-list > li > a, .footer-menu-item-list > li > a:link, .footer-menu-item-list > li > a:visited, .footer-menu-item-list > li > a:active {
         display: inline;
         font-family: 'AvenirLT-Light', sans-serif;
-        font-size: 1.625em; /*26px*/
-        line-height: 1.577em; /*41px*/
+        font-size: 1.625em;
+        line-height: 1.577em;
         text-decoration: none;
     }
     .footer-menu-item-list > li > a:hover {
@@ -967,62 +960,61 @@ blockquote > p:last-of-type {
     .title {
         margin: 40px 0;
         font-family: 'Antic Didone', serif;
-        font-size: 4.8em; /*77px*/
-        line-height: 1.2em; /*92px*/
+        font-size: 4.8em;
+        line-height: 1.2em;
         text-align: left;
     }
     .title-bis {
         margin: 5px 0 30px 0;
         font-family: 'Antic Didone', serif;
-        font-size: 3.44em; /*55px*/
-        line-height: 1,2em; /*66px*/
+        font-size: 3.44em;
+        line-height: 1,2em;
         text-align: left;
     }
     .title-bis2 {
         margin: 30px 0 10px 0;
         font-family: 'Antic Didone', serif;
-        font-size: 5.88em; /*94px*/
-        line-height: 1.19em; /*112px*/
+        font-size: 5.88em;
+        line-height: 1.19em;
         text-align: left;
     }
     .title-bis3 {
         margin: 40px 0;
         font-family: 'Antic Didone', serif;
-        font-size: 4.8em; /*77px*/
-        line-height: 1.2em; /*92px*/
+        font-size: 4.8em;
+        line-height: 1.2em;
         text-align: center;
         width: 100%;
     }
     .home-title {
-        /*margin-top: 10vh;*/
         font-family: 'Antic Didone', serif;
-        font-size: 7.6em; /*122px*/
-        line-height: 1.2em; /*146px*/
+        font-size: 7.6em;
+        line-height: 1.2em;
         text-align: left;
     }
     .title-smaller {
-        font-size: 0.634em; /*77px*/
-        line-height: 1.8925em; /*146px*/
+        font-size: 0.634em;
+        line-height: 1.8925em;
     }
     .title-find {
         text-align: center;
         font-family: 'AvenirLT-Heavy', sans-serif;
-        font-size: 5em; /*80px*/
-        line-height: 1.188em; /*95px*/
+        font-size: 5em;
+        line-height: 1.188em;
         margin: 0 0 4vh 0;
     }
     .footer-menu > div.footer-menu-item > h3.title-footer {
         font-family: 'AvenirLT-Heavy', sans-serif;
-        font-size: 1.937em; /*31px*/
-        line-height: 1.322em; /*41px*/
+        font-size: 1.937em;
+        line-height: 1.322em;
         text-transform: uppercase;
         text-align: left;
         padding: 0 10% 0 0;
     }
     .menu-link {
         font-family: 'AvenirLT-Book', sans-serif;
-        font-size: 2.25em; /*36px*/
-        line-height: 1.2em; /*43px*/
+        font-size: 2.25em;
+        line-height: 1.2em;
         text-align: center;
     }
     .btn-book, .btn-book:link, .btn-book:visited, .btn-book:active {
@@ -1034,8 +1026,8 @@ blockquote > p:last-of-type {
         background-color: #BF964B;
         text-decoration: none;
         font-family: 'AvenirLT-Book', sans-serif;
-        font-size: 2.25em; /*36px*/
-        line-height: 1.2em; /*43px*/
+        font-size: 2.25em;
+        line-height: 1.2em;
         text-align: center;
         float: right;
     }
@@ -1053,8 +1045,8 @@ blockquote > p:last-of-type {
         background-color: #BF964B;
         text-decoration: none;
         font-family: 'AvenirLT-Medium', sans-serif;
-        font-size: 2.06em; /*33px*/
-        line-height: 1.213em; /*40px*/
+        font-size: 2.06em;
+        line-height: 1.213em;
         text-align: center;
         float: left;
     }
@@ -1073,8 +1065,8 @@ blockquote > p:last-of-type {
         color: #736C4D;
         text-decoration: none;
         font-family: 'AvenirLT-Heavy', sans-serif;
-        font-size: 6.375em; /*8.375em*/ /*134px*/
-        line-height: 1.201em; /*161px*/
+        font-size: 6.375em;
+        line-height: 1.201em;
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
@@ -1091,22 +1083,22 @@ blockquote > p:last-of-type {
     .text {
         margin: 10px 0 35px 0;
         font-family: 'AvenirLT-Light', sans-serif;
-        font-size: 2em; /*32px*/
-        line-height: 1.19em; /*38px*/
+        font-size: 2em;
+        line-height: 1.19em;
         text-align: left;
     }
     .msg {
         margin: 0 0 35px 0;
         font-family: 'AvenirLT-Light', sans-serif;
-        font-size: 2.75em; /*44px*/
-        line-height: 1.18em; /*52px*/
+        font-size: 2.75em;
+        line-height: 1.18em;
         text-align: left;
     }
     .text-find {
         margin: 0;
         text-align: center;
         font-family: 'AvenirLT-Light', sans-serif;
-        font-size: 1.75em; /*28px*/
-        line-height: 1.18em; /*33px*/
+        font-size: 1.75em;
+        line-height: 1.18em;
     }
 } 
