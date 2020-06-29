@@ -43,7 +43,7 @@ window.onload = () => {
         else {
             mobileIcon.classList.remove("menu-burger-active");
             mobileIcon.style.display = "none";
-            menuMobile.style.display = "block";
+            menuMobile.style.display = "flex";
         }
     }
 };
